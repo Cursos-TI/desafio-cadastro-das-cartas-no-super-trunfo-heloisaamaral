@@ -1,22 +1,93 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    char estado[50];
+    char código [80];
+    char cidade [60];
+    int população1, população2;
+    float área1, área2;
+    float PIB1, PIB2;
+    int pontosturisticos;
+    float densidadepopulacional;
+    float PIBpercapita;
 
+
+    printf("Carta 1 \n\n");
+
+    printf("Digite o nome do estado: \n");
+    scanf("%s", &estado);
+
+    printf("Digite o código da carta: \n");
+    scanf("%s", &código);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", &cidade);
+
+    printf("Digite a população: \n");
+    scanf("%d", &população1);
+
+    printf("Digite a área em km²: \n");
+    scanf("%f", &área1);
+
+    printf("Digite o valor do PIB: \n");
+    scanf("%f", &PIB1);
+
+    printf("Digite a quantidade de pontos turísticos: \n");
+    scanf("%d", &pontosturisticos);
+
+    densidadepopulacional = população1 / área1;
+
+    printf("A densidade populacional é: %.2f\n", densidadepopulacional);
+
+    PIBpercapita = PIB1 / população1;
+
+    printf("O PIB per capita é: %.2f\n\n", PIBpercapita);
+    
+
+    printf("Carta 2 \n\n");
+
+    printf("Digite o nome do estado: \n");
+    scanf("%s", &estado);
+
+    printf("Digite o código da carta: \n");
+    scanf("%s", &código);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", &cidade);
+
+    printf("Digite a população: \n");
+    scanf("%d", &população2);
+
+    printf("Digite a área em km²: \n");
+    scanf("%f", &área2);
+
+    printf("Digite o valor do PIB: \n");
+    scanf("%f", &PIB2);
+
+    printf("Digite a quantidade de pontos turísticos: \n");
+    scanf("%d", &pontosturisticos);
+
+    densidadepopulacional = população2 / área2;
+
+    printf("A densidade populacional é: %.2f\n", densidadepopulacional);
+
+    PIBpercapita = PIB2 / população2;
+
+    printf("O PIB per capita é: %.2f\n", PIBpercapita);
+
+
+    printf("Carta1- Macarani- área = 1.372 km²\n");
+    printf("Carta2- Curitiba - área = 432 km²\n");
+
+    if (área1 > área2){
+        printf("Resultado = Carta1 venceu!\n");
+
+    } else {
+        printf("Resultado = Carta2 venceu!\n");
+    }
+    
+    
     return 0;
+
 }
+
