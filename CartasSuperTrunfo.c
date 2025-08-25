@@ -41,7 +41,7 @@ int main() {
 
     PIBpercapita = PIB1 / população1;
 
-    printf("O PIB per capita é: %.2f\n", PIBpercapita);
+    printf("O PIB per capita é: %.2f\n\n", PIBpercapita);
     
 
     printf("Carta 2 \n\n");
@@ -76,18 +76,14 @@ int main() {
     printf("O PIB per capita é: %.2f\n", PIBpercapita);
 
 
-    if (população1 > população2){
-        printf("Carta1 venceu!\n");
-        
-    } else {
-        printf("Carta2 venceu!\n");
-    }
+    printf("Carta1- Macarani- área = 1.372 km²\n");
+    printf("Carta2- Curitiba - área = 432 km²\n");
 
     if (área1 > área2){
-        printf("Carta1 venceu!\n");
-        
+        printf("Resultado = Carta1 venceu!\n");
+
     } else {
-        printf("Carta2 venceu!\n");
+        printf("Resultado = Carta2 venceu!\n");
     }
     
     
